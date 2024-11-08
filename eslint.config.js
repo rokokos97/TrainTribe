@@ -26,21 +26,25 @@ export default [
       "no-console": "warn",
       "arrow-parens": ["error", "always"],
       "react/jsx-first-prop-new-line": ["error", "multiline"],
-      "react/jsx-max-props-per-line": ["error", { "maximum": 1 }],
+      "react/jsx-max-props-per-line": ["error", { maximum: 1 }],
       "react/jsx-closing-bracket-location": ["error", "line-aligned"]
     }
   },
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
-  { languageOptions: {
-    globals: globals.browser,
-    parser: tseslint.parser,
-    sourceType: "module"
-  }
+  {
+    languageOptions: {
+      globals: globals.browser,
+      parser: tseslint.parser,
+      sourceType: "module"
+    }
   },
-  {settings: {
-    react: {
-      version: "detect"
-    }}},
+  {
+    settings: {
+      react: {
+        version: "detect"
+      }
+    }
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended
