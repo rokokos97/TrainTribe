@@ -62,53 +62,53 @@ $tabdle-white-header: rgba(255, 255, 255, 0.02);
 // fonts
 
 @mixin title-font() {
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 46px;
-    letter-spacing: -1px;
-    text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 @mixin subtitle-font {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
 @mixin button-color() {
-    display: inline-block;
-    font-size: 16px; 
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: $color-5; 
-    color: $color-0;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
-  
-    &:hover {
-      background-color: $color-4;
-    }
-  
-    &:active {
-      background-color: $color-6;
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
-    }
-  
-    &:focus {
-      outline: 0;
-      box-shadow: 0 0 0 2px rgba(99, 124, 200, 0.4);
-    }
-  
-    &:disabled {
-      background-color: $color-2;
-      color: $color-3;
-      cursor: not-allowed;
-    }
-} 
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: $color-5;
+  color: $color-0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-4;
+  }
+
+  &:active {
+    background-color: $color-6;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(99, 124, 200, 0.4);
+  }
+
+  &:disabled {
+    background-color: $color-2;
+    color: $color-3;
+    cursor: not-allowed;
+  }
+}
 @mixin button-transparent() {
   display: inline-block;
   font-size: 16px;
@@ -117,13 +117,13 @@ $tabdle-white-header: rgba(255, 255, 255, 0.02);
   background-color: transparent;
   color: $color-5;
   border: none;
-//   border: 2px solid $color-5;
+  //   border: 2px solid $color-5;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: rgba($color-5, 0.2); 
+    background-color: rgba($color-5, 0.2);
     color: $color-5;
   }
 
