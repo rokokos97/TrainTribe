@@ -1,0 +1,21 @@
+@use "/src/styles/variables.scss" as *;
+
+.Header {
+    border: 1px solid $border-white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: $gray-13;
+
+    .title {
+        color: $title-white-color;
+        @include title-font();
+    }
+
+    .subtitle {
+        color: $secondary-text-white-color;
+        @include subtitle-font();
+    }
+}
