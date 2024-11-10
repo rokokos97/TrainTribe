@@ -13,4 +13,8 @@
     @include button-transparent();
     width: $button-mediun;
   }
+  .buttonSmall {
+    @include button-transparent();
+    width: $button-small;
+  }
 }
