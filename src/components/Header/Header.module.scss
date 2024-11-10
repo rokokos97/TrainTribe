@@ -1,7 +1,7 @@
 @use "/src/styles/variables.scss" as *;
 
 .Header {
-  border: 1px solid $border-white-color;
+  // border: 1px solid $border-white-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +12,7 @@
   .title {
     color: $title-white-color;
     @include title-font();
-  }
-
-  .subtitle {
-    color: $secondary-text-white-color;
-    @include subtitle-font();
+    letter-spacing: -2px;
+    word-spacing: 3px;
   }
 }
