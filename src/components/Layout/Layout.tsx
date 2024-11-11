@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "./Layout.module.scss";
 
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import {Outlet} from "react-router-dom";
+
 const Layout: React.FC = () => {
   return (
     <div className={styles.Layout}>
-      <button className={styles.button}>join the tribe</button>
-      <button className={styles.button}>share the stribe</button>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 };
