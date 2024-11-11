@@ -3,11 +3,13 @@
 .Header {
   // border: 1px solid $border-white-color;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 16px;
   background-color: $gray-13;
+
+  position: fixed;
+  top: 0;
 
   .title {
     color: $title-white-color;

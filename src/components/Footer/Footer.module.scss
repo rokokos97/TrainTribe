@@ -1,13 +1,15 @@
 @use "/src/styles/variables.scss" as *;
 
 .Footer {
-  border: 1px solid $border-white-color;
   display: flex;
   flex-direction: column;
   gap: $spacing-md;
   justify-content: center;
   align-items: center;
   padding: 16px;
+
+  position: fixed;
+  bottom: 0;
 
   .button {
     @include button-transparent();
