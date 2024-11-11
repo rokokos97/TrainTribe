@@ -11,6 +11,10 @@
   position: fixed;
   top: 0;
 
+  a {
+    text-decoration: none;
+  }
+
   .title {
     color: $title-white-color;
     @include title-font();
