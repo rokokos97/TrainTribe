@@ -11,6 +11,10 @@
   position: fixed;
   bottom: 0;
 
+  a {
+    text-decoration: none;
+  }
+
   .button {
     @include button-transparent();
     width: $button-mediun;
