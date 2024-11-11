@@ -80,7 +80,7 @@ $tabdle-white-header: rgba(255, 255, 255, 0.02);
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 8px 16px;
+  padding: $spacing-md $spacing-md;
   border-radius: 4px;
   background-color: $color-5;
   color: $color-9;
@@ -112,7 +112,7 @@ $tabdle-white-header: rgba(255, 255, 255, 0.02);
 @mixin button-transparent() {
   display: inline-block;
   font-size: 16px;
-  padding: 8px 16px;
+  padding: $spacing-md $spacing-md;
   border-radius: 4px;
   text-transform: capitalize;
   background-color: transparent;
