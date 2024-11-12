@@ -144,3 +144,63 @@ $tabdle-white-header: rgba(255, 255, 255, 0.02);
     cursor: not-allowed;
   }
 }
+
+@mixin verticalForm (){ 
+  form { 
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+  input[type="submit"] {
+    @include button-color();
+    width: $button-xlarge;
+    margin-top: $spacing-lg;
+  }
+  label {
+    @include subtitle-font;
+    font-size: 14px;
+    color: $color-3;
+  }
+  input {
+    display: block;
+    width: $button-xlarge+(-26px);
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid $color-3;
+    border-radius: 4px;
+    //   background-color: $color-8;
+    color: $color-0;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: $color-4; // Колір для плейсхолдера
+    }
+
+    &:focus {
+      border-color: $color-5;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(99, 124, 200, 0.4); // Рамка при фокусі
+    }
+  }
+  select {
+    display: block;
+    width: $button-xlarge;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid $color-3;
+    border-radius: 4px;
+    //   background-color: $color-8;
+    color: $color-0;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: $color-4; // Колір для плейсхолдера
+    }
+
+    &:focus {
+      border-color: $color-5;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(99, 124, 200, 0.4); // Рамка при фокусі
+    }
+  }
+}
