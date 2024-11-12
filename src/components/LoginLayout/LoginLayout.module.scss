@@ -1,2 +1,11 @@
 .LoginLayout {
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    .subtitle {
+        @include subtitle-font();
+    }
 }
