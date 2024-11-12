@@ -6,9 +6,8 @@ import Layout from "./components/Layout/Layout";
 import MainPage from "./components/MainPage/MainPage";
 import JoinTheTribe from "./components/JoinTheTribe/JoinTheTribe";
 import ShareTheStribe from "./components/ShareTheStribe/ShareTheStribe";
-import SignIn from "./components/SignIn/SignIn";
-import SignUp from "./components/SignUp/SignUp";
 import Page404 from "./components/Page404/Page404";
+import LoginLayout from "./components/LoginLayout/LoginLayout";
 function App(): React.JSX.Element {
   return (
     <section className={styles.App}>
@@ -30,12 +29,8 @@ function App(): React.JSX.Element {
             element={<ShareTheStribe />}
           />
           <Route
-            path="/signIn"
-            element={<SignIn/>}
-          />
-          <Route
-            path="*"
-            element={<SignUp/>}
+            path="/signIn/*"
+            element={<LoginLayout />}
           />
           <Route
             path="*"
