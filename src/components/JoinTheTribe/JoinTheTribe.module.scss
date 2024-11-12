@@ -1,0 +1,9 @@
+@use "/src/styles/variables.scss" as *;
+
+.JoinTheTribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-xs;
+  height: 100vh;
+}
