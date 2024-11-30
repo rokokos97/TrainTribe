@@ -1,13 +1,11 @@
 import React from "react";
-import styles from "./App.module.scss";
 import { Routes, Route } from "react-router-dom";
 
 function App(): React.JSX.Element {
   return (
-    <section className={styles.App}>
+    <section>
       <Routes>
-        <Route>
-        </Route>
+        <Route></Route>
       </Routes>
       Hello world
     </section>
