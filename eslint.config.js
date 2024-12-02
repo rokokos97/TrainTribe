@@ -15,7 +15,11 @@ export default [
       "prefer-const": "error",
       "no-unused-vars": [
         "error",
-        { vars: "all", args: "none", ignoreRestSiblings: true }
+        {
+          vars: "all",
+          args: "none",
+          ignoreRestSiblings: true
+        }
       ],
       curly: ["error", "multi-line"],
       eqeqeq: ["error", "always"],
@@ -25,12 +29,23 @@ export default [
       "no-multiple-empty-lines": ["error", { max: 1 }],
       "no-console": "warn",
       "arrow-parens": ["error", "always"],
-      "react/jsx-first-prop-new-line": ["error", "multiline"],
-      "react/jsx-max-props-per-line": ["error", { maximum: 1 }],
-      "react/jsx-closing-bracket-location": ["error", "line-aligned"]
+      "react/jsx-first-prop-new-line": [
+        "error",
+        "multiline"
+      ],
+      "react/jsx-max-props-per-line": [
+        "error",
+        { maximum: 2 }
+      ],
+      "react/jsx-closing-bracket-location": [
+        "error",
+        "line-aligned"
+      ]
     }
   },
-  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  {
+    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"]
+  },
   {
     languageOptions: {
       globals: globals.browser,
